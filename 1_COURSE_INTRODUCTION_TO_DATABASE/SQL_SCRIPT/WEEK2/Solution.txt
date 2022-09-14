@@ -1,5 +1,5 @@
 -- CREATE DATABASE cm_devices;
--- USE cm_devices;
+USE cm_devices;
 -- SHOW TABLES;
 -- CREATE TABLE devices(deviceID int,deviceName varchar(50),price decimal);
 -- SHOW COLUMNS FROM devices;
@@ -7,6 +7,10 @@
 -- SHOW COLUMNS FROM customers;
 -- CREATE TABLE feedback(feedbackID CHAR(8),feedbackType VARCHAR(100),comment TEXT(500));
 -- SHOW COLUMNS FROM feedback;
+-- CREATE TABLE address (id int NOT NULL,  street VARCHAR(255), postcode VARCHAR(10) DEFAULT "HA97DE", town VARCHAR(30) DEFAULT "Harrow"); 
+SHOW COLUMNS FROM address;
+-- CREATE TABLE invoice(customerName VARCHAR(50),orderDATE DATE,quantity INT,price DECIMAL);
+SHOW COLUMNS FROM invoice;
 
 [Inshalah Will be Added]
 
