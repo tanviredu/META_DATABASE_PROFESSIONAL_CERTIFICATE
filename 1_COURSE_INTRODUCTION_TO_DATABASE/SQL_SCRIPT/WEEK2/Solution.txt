@@ -1,0 +1,12 @@
+-- CREATE DATABASE cm_devices;
+-- USE cm_devices;
+-- SHOW TABLES;
+-- CREATE TABLE devices(deviceID int,deviceName varchar(50),price decimal);
+-- SHOW COLUMNS FROM devices;
+-- CREATE TABLE customers(username CHAR(9),fullname VARCHAR(100),email VARCHAR(255));
+-- SHOW COLUMNS FROM customers;
+-- CREATE TABLE feedback(feedbackID CHAR(8),feedbackType VARCHAR(100),comment TEXT(500));
+-- SHOW COLUMNS FROM feedback;
+
+[Inshalah Will be Added]
+
