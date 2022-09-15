@@ -4,12 +4,13 @@ class House:
     '''
     num_rooms = 5
     batchrooms = 2
-    def __init__(self) -> None:
+    def __init__(self):
         pass
 
-    def cost_evaluation(self) -> int:
-        print(self.num_rooms)
-        pass
+    def cost_evaluation(self,rate):
+        '''Functionality to calculate the cist of the room '''
+        cost = rate*self.num_rooms
+        return cost
 
 
 house = House();
