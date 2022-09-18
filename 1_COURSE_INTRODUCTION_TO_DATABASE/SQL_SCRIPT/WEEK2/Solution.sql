@@ -55,25 +55,36 @@ CREATE TABLE customer(
 
 
 CREATE TABLE product(
-	product_id INT,
-    name VARCHAR(100),
-    price NUMERIC(8,2),
-    description VARCHAR(255),
-    PRIMARY KEY (product_id)
+	product_id   INT,
+    name         VARCHAR(100),
+    price        NUMERIC(8,2),
+    description  VARCHAR(255),
+    PRIMARY KEY  (product_id)
 );
 
 
 
 CREATE TABLE cart_order(
-	order_id INT,
+	order_id    INT,
     customer_id INT,
-    product_id INT,
-    quantity INT,
-    order_date DATE,
+    product_id  INT,
+    quantity    INT,
+    order_date  DATE,
     PRIMARY KEY (order_id),
     FOREIGN KEY (customer_id) REFERENCES customer(customer_id),
-    FOREIGN KEY(product_id) REFERENCES product(product_id)
+    FOREIGN KEY (product_id)  REFERENCES product(product_id)
 );
+
+
+ -- create an employee table
+
+CREATE TABLE employee(
+    id   INT,
+    name VARCHAR(50),
+    salary INT
+
+);
+
 
 
 
